@@ -13,7 +13,7 @@ class NumericalImputer(BaseEstimator, TransformerMixin):
             self.variables = variables
 
     def fit(self, X, y=None):
-        # persist mode in a dictionary
+        # persist mode-value in a dictionary
         self.imputer_dict_ = {}
 
         for feature in self.variables:
